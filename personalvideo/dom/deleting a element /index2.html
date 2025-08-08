@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+</head>
+<body>
+    <div>
+        <h1>Todo app</h1>
+
+        <div id="todo-1" style="display: flex;">
+            <h4>1. walking </h4>
+            <button onclick="del(1)" >delete</button>
+        </div>
+
+        <div id="todo-2" style="display: flex;">
+            <h4>2. sitting</h4>
+            <button onclick="del(2)">delete</button>
+        </div>
+
+        <div id="todo-3" style="display: flex;">
+             <h4>3. running</h4>
+             <button onclick="del(3)">delete</button>
+        </div>
+    </div>
+</body>
+
+
+<script>
+
+    //deleting an element inside html 
+    function del(idno){
+        let a = document.getElementById("todo-" + idno)
+        a.parentNode.removeChild(a)
+    }
+</script>
+
+</html>

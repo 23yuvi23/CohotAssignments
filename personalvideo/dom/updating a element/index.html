@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vs code</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            background-color: rgb(58, 58, 58);
+        }
+    </style>
+</head>
+
+
+
+<body>
+    //read , add , delete , edit 
+    <h1>Todo list</h1>
+    <h4>1. Take class</h4>
+    <h4>2. Go out to eat</h4>
+    <div>
+        <input type="text" placeholder="Add yout todo here"></input>
+        <button onclick = "addTodo()" >Add Todo</button>
+    </div>
+    <script src="script.js"></script>
+
+    <script>
+        // we do .value for input text box     
+        // eg -> document.querySelector ("input").value
+
+        //we do . innerHtml for any non input html code to print   
+        // eg -> document.querySelector ("h1").innerHtml
+
+
+        //fetchin the element from dom
+        function addTodo(){
+        const inputel = document.querySelector ("input")
+        const value = inputel.value;
+        console.log(value);
+        }
+        
+        
+        
+    </script>
+</body>
+</html>

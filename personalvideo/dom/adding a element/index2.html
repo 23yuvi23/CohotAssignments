@@ -8,4 +8,16 @@
 <body>
     hello
 </body>
+
+<script>
+    //this will create a element div on the memory
+    const divel = document.createElement("div")
+    divel.innerHTML= "hello everyone";
+
+    //this will consider body as parent and append a 
+    //child element so that changes shown in the screen not in memory
+    const parentel = document.querySelector("body")
+    parentel.appendChild(divel)
+    
+</script>
 </html>

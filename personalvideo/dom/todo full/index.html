@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s; /* smooth animation */
+  }
+  .dark-mode {
+    background-color: #1E1E1E; /* classy dark shade */
+    color: #E0E0E0; /* soft white text */
+  }
+  button {
+    padding: 8px 16px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+
+    </style>
+</head>
+<body>
+    <div>
+        <button style= "position: fixed; top: 4;right: 0;"  onclick="dark()">Dark mode</button>
+    </div>
+
+    <h1>Todo App</h1>
+    <input type="text" name="" id="">
+    <button onclick="add()">Add Todo</button>
+</body>
+
+<script src="script.js"></script>
+</html>

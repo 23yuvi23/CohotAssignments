@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="">
+    <button onclick="add()">add</button>
+</body>
+
+<script>
+
+    function add(){
+        const value = document.querySelector("input").value
+        const spanEL = document.createElement("span");
+        const buttonEL = document.createElement("button");
+        const container = document.createElement("div");
+
+        spanEL.innerHTML = value;
+        buttonEL.innerHTML = "Delete";
+
+        container.appendChild(spanEL)
+        container.appendChild(buttonEL)
+
+        document.body.appendChild(container)
+        
+    }
+</script>
+</html>
